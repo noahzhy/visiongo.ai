@@ -1,0 +1,3 @@
+[submodule "visionbot"]
+	path = visionbot
+	url = https://github.com/noahzhy/visionbot.git
