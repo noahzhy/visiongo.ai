@@ -1,601 +1,518 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>VisionGO AI Technology</title>
+<link rel="shortcut icon" href="images/icon.ico" /> 
 
-<html lang="en" class="no-js">
-    <!-- BEGIN HEAD -->
-    <head>
-        <meta charset="utf-8"/>
-        <title>Vision Go!</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="" name="description"/>
-        <meta content="" name="author"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i%7CPoppins:300,400,500,600,700" rel="stylesheet">
 
-        <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<!-- Bootstrap -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- PAGE LEVEL PLUGIN STYLES -->
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+<!-- Font-Awesome -->
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
-        <!-- THEME STYLES -->
-        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+<!-- Lightcase -->
+<link href="assets/css/lightcase.css" rel="stylesheet">
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico"/>
-    </head>
-    <!-- END HEAD -->
+<!-- Swiper -->
+<link href="assets/css/swiper.min.css" rel="stylesheet">
 
-    <!-- BODY -->
-    <body>
+<!-- Animate -->
+<link href="assets/css/animate.css" rel="stylesheet">
 
-        <!--========== HEADER ==========-->
-        <header class="header navbar-fixed-top">
-            <!-- Navbar -->
-            <nav class="navbar" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="menu-container">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
+<!-- Style -->
+<link href="assets/css/style.css" rel="stylesheet">
 
-                        <!-- Logo -->
-                        <div class="logo">
-                            <a class="logo-wrap" href="index.html">
-                                <img class="logo-img logo-img-main" src="img/logo.png" alt="Asentus Logo">
-                                <img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Asentus Logo">
-                            </a>
-                        </div>
-                        <!-- End Logo -->
-                    </div>
+<!-- Responsive -->
+<link href="assets/css/responsive.css" rel="stylesheet">
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
-                        <div class="menu-container">
-                            <ul class="navbar-nav navbar-nav-right">
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">About</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">Products</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="consulting.html">Consulting</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="news.html">News</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Navbar Collapse -->
-                </div>
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!--========== END HEADER ==========-->
 
-        <!--========== SLIDER ==========-->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <div class="container">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                </ol>
-            </div>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="img-responsive" src="img/1920x1080/01.jpg" alt="Slider Image">
-                    <div class="container">
-                        <div class="carousel-centered">
-                            <div class="margin-b-40">
-                                <h1 class="carousel-title" style="font-size: 50px;">현장에 꼭 필요한 빠르고 적절한 AI 기술</h1>
-                                <p style="font-size: 30px;">Fast and appropriate AI technology essential for the field.</p>
-                            </div>
-                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img class="img-responsive" src="img/1920x1080/02.jpg" alt="Slider Image">
-                    <div class="container">
-                        <div class="carousel-centered">
-                            <div class="margin-b-40">
-                                <h2 class="carousel-title" style="font-size: 50px;">비전케어</h2>
-                                <p style="font-size: 30px;">AI 기반 독거노인 주거지 돌발사고 자동 감지 및 케어 시스템</p>
-                            </div> 
-                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+</head>
+<body data-spy="scroll">
+<!-- Preloader start here -->
+<div class="preloader">
+  <div class="loader">
+    <div class="ld-child"></div>
+    <div class="ld-child ld-child2"></div>
+  </div>
+</div>
+<!-- Preloader end here -->
+
+<header>
+  <nav class="main-menu menu-fixed">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" class="img-responsive"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="#banner">Home</a></li>
+          <li><a class="page-scroll" href="#about">About</a></li>
+          <li><a class="page-scroll" href="#services">Services</a></li>
+          <li><a class="page-scroll" href="#portfolio">Products</a></li>
+          <li><a class="page-scroll" href="#team">Team</a></li>
+          <!-- <li><a class="page-scroll" href="#pricing">Pricing</a></li>
+          <li><a class="page-scroll" href="#testimonial">Testimonial</a></li>
+          <li><a class="page-scroll" href="#blog">Blog</a></li> -->
+          <li><a class="page-scroll" href="#client">Partners</a></li>
+          <li><a class="page-scroll" href="#contact">Contact</a></li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+</header>
+
+
+<section id="banner" class="banner">
+  <div class="overlay">
+    <div class="banner-content">
+      <h3>VisionGO AI Technology</h3>
+      <p style="font-size: 24px;">Fast and appropriate AI technology essential for the field.</p>
+      <a href="#about" class="default-button page-scroll">Get Started</a>
+    </div><!-- banner content -->
+  </div><!-- overlay -->
+</section>
+
+
+<!-- about section start -->
+<section id="about" class="about-us padding-120">
+  <div class="container">
+    <div class="section-header text-center">
+      <h3>About Us</h3>
+      <p></p>
+      <!-- <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in facilisis ex, vitae maximus diam. Maecenas nisl dui.</i></p> -->
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="about-image">
+          <img src="images/about.jpg" alt="about image">
         </div>
-        <!--========== SLIDER ==========-->
+      </div>
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <!-- <h3>We are creative studio</h3> -->
+        <p><비전고>는 기술을 위한 기술이 아닌 인간을 위해 존재하는 유용하고 혁신적인 기술을 만드는 스타트업입니다.</p>
+        <p>비전고는 스마트 빌리지에 적용 가능한 AI 기술이 무엇이며, 실제로 어떻게 적용할 수 있을까 고민하면서 시작되었습니다. 우리가 처음 만들어본 AI 기반 스마트 빌리지 솔루션은 <노인 낙상을 감지하는 AI 카메라>와 <드론 영상을 AI로 처리하여 영농 쓰레기를 찾는 기술> 이였습니다.</p> 
+        <p>비전고는 한국과 중국의 전문가가 함께 만들어가는 스타트업입니다. 우리는 우리의 비전을 한국에서 시작해서 중국으로 그리고 세계로 펼쳐나갈 것입니다.</p>
+        <!-- <div class="row">
+          <div class="col-md-6">
+            <h4>Our Vision</h4>
+            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse volutpat porta felis ut cursus.</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Our Mission</h4>
+            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse volutpat porta felis ut cursus.</p>
+          </div>
+        </div> -->
+      </div>
+    </div><!-- row -->
+  </div><!-- container -->
+</section>
+<!-- about section end -->
 
-        <!--========== PAGE LAYOUT ==========-->
-        <!-- Service -->
-        <div class="bg-color-sky-light" data-auto-height="true">
-            <div class="content-lg container">
-                <div class="row row-space-1 margin-b-2">
-                    <div class="col-sm-4 sm-margin-b-2">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-chemistry"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Art Of Coding</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 sm-margin-b-2">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-screen-tablet"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Responsive Design</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Feature Reach</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--// end row -->
 
-                <div class="row row-space-1">
-                    <div class="col-sm-4 sm-margin-b-2">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-notebook"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Useful Documentation</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 sm-margin-b-2">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-speedometer"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Fast Delivery</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".6s">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Free Plugins</h3>
-                                    <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
+
+<!-- services section start -->
+<section id="services" class="services padding-120 bg-color">
+  <div class="container">
+    <div class="section-header text-center">
+      <h3>Our Services</h3>
+      <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in facilisis ex, vitae maximus diam. Maecenas nisl dui.</i></p>
+    </div>
+    <div class="service-items">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-item">
+            <span><i class="fa fa-android" aria-hidden="true"></i></span>
+            <h4>App Development</h4>
+            <p>Interdum et malesuada fames ac ante ipsum primis faucib. Suspendisse volutpat porta felises ut cursus.</p>
+          </div><!-- service-item -->
         </div>
-        <!-- End Service -->
-
-        <!-- Latest Products -->
-        <div class="content-lg container">
-            <div class="row margin-b-40">
-                <div class="col-sm-6">
-                    <h2>Latest Products</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
-                </div>
-            </div>
-            <!--// end row -->
-
-            <div class="row">
-                <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/01.jpg" alt="Latest Products Image">
-                        </div>
-                    </div>
-                    <h4><a href="#">Triangle Roof</a> <span class="text-uppercase margin-l-20">Management</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <a class="link" href="#">Read More</a>
-                </div>
-                <!-- End Latest Products -->
-
-                <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/02.jpg" alt="Latest Products Image">
-                        </div>
-                    </div>
-                    <h4><a href="#">Curved Corners</a> <span class="text-uppercase margin-l-20">Developmeny</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <a class="link" href="#">Read More</a>
-                </div>
-                <!-- End Latest Products -->
-
-                <!-- Latest Products -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/03.jpg" alt="Latest Products Image">
-                        </div>
-                    </div>
-                    <h4><a href="#">Bird On Green</a> <span class="text-uppercase margin-l-20">Design</span></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <a class="link" href="#">Read More</a>
-                </div>
-                <!-- End Latest Products -->
-            </div>
-            <!--// end row -->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-item">
+            <span><i class="fa fa-code" aria-hidden="true"></i></span>
+            <h4>AI Development</h4>
+            <p>Interdum et malesuada fames ac ante ipsum primis faucib. Suspendisse volutpat porta felises ut cursus.</p>
+          </div><!-- service-item -->
         </div>
-        <!-- End Latest Products -->
-		<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >免费网站模板</a></div>
-        <!-- Clients -->
-        <div class="bg-color-sky-light">
-            <div class="content-lg container">
-                <!-- Swiper Clients -->
-                <div class="swiper-slider swiper-clients">
-                    <!-- Swiper Wrapper -->
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/01.png" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/02.png" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/03.png" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/04.png" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/05.png" alt="Clients Logo">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="img/clients/06.png" alt="Clients Logo">
-                        </div>
-                    </div>
-                    <!-- End Swiper Wrapper -->
-                </div>
-                <!-- End Swiper Clients -->
-            </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-item">
+            <span><i class="fa fa-camera-retro" aria-hidden="true"></i></span>
+            <h4>Photography</h4>
+            <p>Interdum et malesuada fames ac ante ipsum primis faucib. Suspendisse volutpat porta felises ut cursus.</p>
+          </div><!-- service-item -->
         </div>
-        <!-- End Clients -->
-
-        <!-- Testimonials -->
-        <div class="content-lg container">
-            <div class="row">
-                <div class="col-sm-9">
-                    <h2>Customer Reviews</h2>
-
-                    <!-- Swiper Testimonials -->
-                    <div class="swiper-slider swiper-testimonials">
-                        <!-- Swiper Wrapper -->
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <blockquote class="blockquote">
-                                    <div class="margin-b-20">
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
-                                    </div>
-                                    <div class="margin-b-20">
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
-                                    </div>
-                                    <p><span class="fweight-700 color-link">Joh Milner</span>, Metronic Customer</p>
-                                </blockquote>
-                            </div>
-                            <div class="swiper-slide">
-                                <blockquote class="blockquote">
-                                    <div class="margin-b-20">
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                    <div class="margin-b-20">
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </div>
-                                    <p><span class="fweight-700 color-link">Alex Clarson</span>, Metronic Customer</p>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <!-- End Swiper Wrapper -->
-
-                        <!-- Pagination -->
-                        <div class="swiper-testimonials-pagination"></div>
-                    </div>
-                    <!-- End Swiper Testimonials -->
-                </div>
-            </div>
-            <!--// end row -->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-item">
+            <span><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+            <h4>SEO</h4>
+            <p>Interdum et malesuada fames ac ante ipsum primis faucib. Suspendisse volutpat porta felises ut cursus.</p>
+          </div><!-- service-item -->
         </div>
-        <!-- End Testimonials -->
-
-        <!-- Pricing -->
-        <div class="bg-color-sky-light">
-            <div class="content-lg container">
-                <div class="row row-space-1">
-                    <div class="col-sm-4 sm-margin-b-2">
-                        <!-- Pricing -->
-                        <div class="pricing">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-chemistry"></i>
-                                <h3>Starter Kit <span> - $</span> 49</h3>
-                                <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">Basic Features</li>
-                                <li class="pricing-list-item">Up to 5 products</li>
-                                <li class="pricing-list-item">50 Users Panels</li>
-                            </ul>
-                            <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
-                        </div>
-                        <!-- End Pricing -->
-                    </div>
-                    <div class="col-sm-4 sm-margin-b-2">
-                        <!-- Pricing -->
-                        <div class="pricing pricing-active">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-badge"></i>
-                                <h3>Professional <span> - $</span> 149</h3>
-                                <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">Basic Features</li>
-                                <li class="pricing-list-item">Up to 100 products</li>
-                                <li class="pricing-list-item">100 Users Panels</li>
-                            </ul>
-                            <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
-                        </div>
-                        <!-- End Pricing -->
-                    </div>
-                    <div class="col-sm-4">
-                        <!-- Pricing -->
-                        <div class="pricing">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-shield"></i>
-                                <h3>Advanced <span> - $</span> 249</h3>
-                                <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">Extended Features</li>
-                                <li class="pricing-list-item">Unlimited products</li>
-                                <li class="pricing-list-item">Unlimited Users Panels</li>
-                            </ul>
-                            <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
-                        </div>
-                        <!-- End Pricing -->
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-item">
+            <span><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+            <h4>Marketing</h4>
+            <p>Interdum et malesuada fames ac ante ipsum primis faucib. Suspendisse volutpat porta felises ut cursus.</p>
+          </div><!-- service-item -->
         </div>
-        <!-- End Pricing -->
-
-        <!-- Promo Section -->
-        <div class="promo-section overflow-h">
-            <div class="container">
-                <div class="clearfix">
-                    <div class="ver-center">
-                        <div class="ver-center-aligned">
-                            <div class="promo-section-col">
-                                <h2>Our Clients</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
-                                <p>Ipsum dolor sit amet consectetur adipiscing elit sed tempor incididut ut sead laboret dolore magna aliqua enim minim veniam exercitation ipsum dolor sit amet consectetur adipiscing</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="promo-section-img-right">
-                <img class="img-responsive" src="img/970x970/01.jpg" alt="Content Image">
-            </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="service-item">
+            <span><i class="fa fa-cogs" aria-hidden="true"></i></span>
+            <h4>Support</h4>
+            <p>Interdum et malesuada fames ac ante ipsum primis faucib. Suspendisse volutpat porta felises ut cursus.</p>
+          </div><!-- service-item -->
         </div>
-        <!-- End Promo Section -->
+      </div><!-- row -->
+    </div><!-- service-items -->
+  </div><!-- container -->
+</section>
+<!-- services section end -->
 
-        <!-- Work -->
-        <div class="bg-color-sky-light overflow-h">
-            <div class="content-lg container">
-                <div class="row margin-b-40">
-                    <div class="col-sm-6">
-                        <h2>Showcase</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
-                    </div>
-                </div>
-                <!--// end row -->
+<!-- Portfolio section start -->
+<section id="portfolio" class="portfolio padding-120 bg-color">
+  <div class="container">
+    <div class="section-header text-center">
+      <h3>Our Products</h3>
+      <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in facilisis ex, vitae maximus diam. Maecenas nisl dui.</i></p>
+    </div>
 
-                <!-- Masonry Grid -->
-                <div class="masonry-grid">
-                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8">
-                        <!-- Work -->
-                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
-                            <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/800x400/01.jpg" alt="Portfolio Image">
-                            </div>
-                            <div class="work-content">
-                                <h3 class="color-white margin-b-5">Art Of Coding</h3>
-                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
-                            </div>
-                            <a class="content-wrapper-link" href="#"></a>
-                        </div>
-                        <!-- End Work -->
-                    </div>
-                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-                        <!-- Work -->
-                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-                            <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/397x400/01.jpg" alt="Portfolio Image">
-                            </div>
-                            <div class="work-content">
-                                <h3 class="color-white margin-b-5">Clean Design</h3>
-                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
-                            </div>
-                            <a class="content-wrapper-link" href="#"></a>
-                        </div>
-                        <!-- End Work -->
-                    </div>
-                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-                        <!-- Work -->
-                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
-                            <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
-                            </div>
-                            <div class="work-content">
-                                <h3 class="color-white margin-b-5">Clean Design</h3>
-                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
-                            </div>
-                            <a class="content-wrapper-link" href="#"></a>
-                        </div>
-                        <!-- End Work -->
-                    </div>
-                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-                        <!-- Work -->
-                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".4s">
-                            <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/397x300/02.jpg" alt="Portfolio Image">
-                            </div>
-                            <div class="work-content">
-                                <h3 class="color-white margin-b-5">Clean Design</h3>
-                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
-                            </div>
-                            <a class="content-wrapper-link" href="#"></a>
-                        </div>
-                        <!-- End Work -->
-                    </div>
-                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-                        <!-- Work -->
-                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".5s">
-                            <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/397x300/03.jpg" alt="Portfolio Image">
-                            </div>
-                            <div class="work-content">
-                                <h3 class="color-white margin-b-5">Clean Design</h3>
-                                <p class="color-white margin-b-0">Lorem ipsum dolor sit amet consectetur adipiscing</p>
-                            </div>
-                            <a class="content-wrapper-link" href="#"></a>
-                        </div>
-                        <!-- End Work -->
-                    </div>
-                </div>
-                <!-- End Masonry Grid -->
-            </div>
+    <ul class="portfolio-menu">
+      <li class="active" data-filter="*">All Items</li>
+      <li data-filter=".design">VisionCare</li>
+      <li data-filter=".photography">Photography</li>
+      <li data-filter=".illustration">Illustration</li>
+      <li data-filter=".vector">Vector</li>
+    </ul>
+
+    <div class="portfolio_items">
+      <div class="portfolio_item design illustration">
+        <div class="pos_rel">
+          <img src="images/gallery/gallery_01.jpg" alt="portfolio Image" class="img-responsive">
+          <div class="overlay"></div>
+          <div class="port_caption">
+            <a href="images/gallery/gallery_01.jpg" class="image-icon" data-rel="lightcase:myCollection"  title="Project Title"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <a href="images/gallery/gallery_01.jpg"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <h4>Project Title Goes Here</h4>
+            <p>Logo Design</p>
+          </div>
         </div>
-        <!-- End Work -->
-        <!--========== END PAGE LAYOUT ==========-->
+      </div><!-- portfolio item -->
+      <div class="portfolio_item photography vector">
+        <div class="pos_rel">
+          <img src="images/gallery/gallery_02.jpg" alt="portfolio Image" class="img-responsive">
+          <div class="overlay"></div>
+          <div class="port_caption">
+            <a href="images/gallery/gallery_02.jpg" class="image-icon" data-rel="lightcase:myCollection"  title="Project Title"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <a href="images/gallery/gallery_02.jpg"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <h4>Project Title Goes Here</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+      </div><!-- portfolio item -->
+      <div class="portfolio_item design illustration">
+        <div class="pos_rel">
+          <img src="images/gallery/gallery_03.jpg" alt="portfolio Image" class="img-responsive">
+          <div class="overlay"></div>
+          <div class="port_caption">
+            <a href="images/gallery/gallery_03.jpg" class="image-icon" data-rel="lightcase:myCollection"  title="Project Title"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <a href="images/gallery/gallery_03.jpg"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <h4>Project Title Goes Here</h4>
+            <p>Illustration</p>
+          </div>
+        </div>
+      </div><!-- portfolio item -->
+      <div class="portfolio_item  vector">
+        <div class="pos_rel">
+          <img src="images/gallery/gallery_04.jpg" alt="portfolio Image" class="img-responsive">
+          <div class="overlay"></div>
+          <div class="port_caption">
+            <a href="images/gallery/gallery_04.jpg" class="image-icon" data-rel="lightcase:myCollection"  title="Project Title"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <a href="images/gallery/gallery_04.jpg"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <h4>Project Title Goes Here</h4>
+            <p>Vector</p>
+          </div>
+        </div>
+      </div><!-- portfolio item -->
+      <div class="portfolio_item design illustration">
+        <div class="pos_rel">
+          <img src="images/gallery/gallery_05.jpg" alt="portfolio Image" class="img-responsive">
+          <div class="overlay"></div>
+          <div class="port_caption">
+            <a href="images/gallery/gallery_05.jpg" class="image-icon" data-rel="lightcase:myCollection"  title="Project Title"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <a href="images/gallery/gallery_05.jpg"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <h4>Project Title Goes Here</h4>
+            <p>Illustration</p>
+          </div>
+        </div>            
+      </div><!-- portfolio item -->
+      <div class="portfolio_item photography">
+        <div class="pos_rel">
+          <img src="images/gallery/gallery_06.jpg" alt="portfolio Image" class="img-responsive">
+          <div class="overlay"></div>
+          <div class="port_caption">
+            <a href="images/gallery/gallery_06.jpg" class="image-icon" data-rel="lightcase:myCollection"  title="Project Title"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <a href="images/gallery/gallery_06.jpg"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <h4>Project Title Goes Here</h4>
+            <p>Photography</p>
+          </div>
+        </div>
+      </div><!-- portfolio item -->
+    </div><!-- portfolio items -->
 
-        <!--========== FOOTER ==========-->
-        <footer class="footer">
-            <!-- Links -->
-            <div class="footer-seperator">
-                <div class="content-lg container">
-                    <div class="row">
-                        <div class="col-sm-2 sm-margin-b-50">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a class="footer-list-link" href="index.html">Home</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="about.html">About</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="products.html">Products</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="consulting.html">Consulting</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="news.html">News</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="contact.html">Contact</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Facebook</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">YouTube</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <!-- <div class="col-sm-5 sm-margin-b-30">
-                            <h2 class="color-white">Send Us A Note</h2>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" required>
-                            <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required>
-                            <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
-                            <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
-                        </div> -->
-                    </div>
-                    <!--// end row -->
-                </div>
+  </div><!-- container -->
+</section>
+<!-- Portfolio section end -->
+
+
+
+<!-- Team section end -->
+<section id="team" class="team padding-120">
+  <div class="container">
+    <div class="section-header text-center">
+      <h3>Our Team</h3>
+      <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in facilisis ex, vitae maximus diam. Maecenas nisl dui.</i></p>
+    </div>
+
+    <div class="team-items">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="team-item">
+            <div class="image">
+              <img src="images/team/team_01.jpg" alt="team image" class="img-responsive">
             </div>
-            <!-- End Links -->
-
-            <!-- Copyright -->
-            <div class="content container">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <img class="footer-logo" src="img/logo.png" alt="Asentus Logo">
-                    </div>
-                    <div class="col-xs-6 text-right">
-                        
-                    </div>
-                </div>
-                <!--// end row -->
+            <div class="details">
+              <h4>Youngjoong Chang</h4>
+              <p>CEO/Doctor of Design</p>
             </div>
-            <!-- End Copyright -->
-        </footer>
-        <!--========== END FOOTER ==========-->
+            <div class="overlay">
+              <h4>Youngjoong Chang</h4>
+              <span>CEO/Doctor of Design</span>
+              <p>Maecenas vel tempus dolor, non commodo justo. Proin tellus enim, dignissim sit amet interdum at, gravida et nisi. Vestibulum maximus nisi felis.</p>
+              <div class="team-social">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div><!-- team item -->
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="team-item">
+            <div class="image">
+              <img src="images/team/team_02.jpg" alt="team image" class="img-responsive">
+            </div>
+            <div class="details">
+              <h4>Haoyu Zhang</h4>
+              <p>CTO</p>
+            </div>
+            <div class="overlay">
+              <h4>Haoyu Zhang</h4>
+              <span>CTO</span>
+              <p>CV Dev. And major in </p>
+              <div class="team-social">
+                <a href="https://www.github.com/noahzhy/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/haoyu.zh/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/noahzhy/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <!-- <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> -->
+              </div>
+            </div>
+          </div><!-- team item -->
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="team-item">
+            <div class="image">
+              <img src="images/team/team_03.jpg" alt="team image" class="img-responsive">
+            </div>
+            <div class="details">
+              <h4>Yuxiang Sun</h4>
+              <p>COO</p>
+            </div>
+            <div class="overlay">
+              <h4>Yuxiang Sun</h4>
+              <span>COO</span>
+              <p>Maecenas vel tempus dolor, non commodo justo. Proin tellus enim, dignissim sit amet interdum at, gravida et nisi. Vestibulum maximus nisi felis.</p>
+              <div class="team-social">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div><!-- team item -->
+        </div>
+        
+      </div>
 
-        <!-- Back To Top -->
-        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+  </div><!-- container -->
+</section><!-- team -->
+<!-- Team section end -->
 
-        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-        <!-- CORE PLUGINS -->
-        <script src="vendor/jquery.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- Client section start -->
+<section id="client" class="client padding-120 bg-color">
+  <div class="container">
+    <div class="section-header text-center">
+      <h3>Our Partners</h3>
+      <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in facilisis ex, vitae maximus diam. Maecenas nisl dui.</i></p>
+    </div><!-- section header -->
 
-        <!-- PAGE LEVEL PLUGINS -->
-        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
-        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
-        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
-        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
-        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
-        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
-        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <!-- Slider main container -->
+    <div class="swiper-container client-slider">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide client-item">
+          <img src="images/partners/10moons.png" alt="10moons" class="img-responsive">
+        </div><!-- client-item -->
+        <div class="swiper-slide client-item">
+          <img src="images/partners/7321.png" alt="7321 Design" class="img-responsive">
+        </div><!-- client-item -->
+        <div class="swiper-slide client-item">
+          <img src="images/partners/won.png" alt="won" class="img-responsive">
+        </div><!-- client-item -->
+        <div class="swiper-slide client-item">
+          <img src="images/partners/panasonic.png" alt="panasonic" class="img-responsive">
+        </div><!-- client-item -->
+        <div class="swiper-slide client-item">
+          <img src="images/partners/nvidia.png" alt="nvidia" class="img-responsive">
+        </div><!-- client-item -->
+        <div class="swiper-slide client-item">
+          <img src="images/partners/zed.png" alt="zed" class="img-responsive">
+        </div><!-- client-item -->
+      </div>
+    </div>
+    
+  </div><!-- container -->
+</section><!-- client -->
+<!-- Client section end -->
 
-        <!-- PAGE LEVEL SCRIPTS -->
-        <script src="js/layout.min.js" type="text/javascript"></script>
-        <script src="js/components/wow.min.js" type="text/javascript"></script>
-        <script src="js/components/swiper.min.js" type="text/javascript"></script>
-        <script src="js/components/masonry.min.js" type="text/javascript"></script>
 
-    </body>
-    <!-- END BODY -->
+<!-- Contact us section start -->
+<section id="contact" class="contact-us padding-120">
+  <div class="container">
+    <div class="section-header text-center">
+      <h3>Contact Us</h3>
+      <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in facilisis ex, vitae maximus diam. Maecenas nisl dui.</i></p>
+    </div><!-- section header -->
+
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <div class="contact-form">
+          <form action="">
+            <input type="text" name="name" placeholder="Write Your Name" class="contact-input">
+            <input type="email" name="email" placeholder="Write Your Email" class="contact-input">
+            <textarea rows="6" class="contact-input">Massege</textarea>
+            <input type="submit" value="submit" class="contact-submit">
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="contact-info">
+        <div class="info-item">
+          <div class="icon">
+            <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+          </div>
+          <div class="content">
+            <p>서울시 종로구 종로 311 3층 (창신동)<br>3F 311, Jong-ro, Jongno-gu, Seoul</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">
+            <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+          </div>
+          <div class="content">
+            <p>+212 668 35 45 69</p>
+            <p>02-123456 </p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">
+            <span><i class="fa fa-envelope-open-o" aria-hidden="true"></i></span>
+          </div>
+          <div class="content">
+            <p>chang@visiongo.ai</p>
+            <p>sun@visiongo.ai</p>
+          </div>
+        </div>
+        </div><!-- contact-info -->
+
+      </div>
+    </div><!-- row -->
+
+    
+  </div><!-- container -->
+</section><!-- client -->
+  <!---<div id="contact_map"></div>--->
+<!-- Contact us section end -->
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <p>서울시 종로구 종로 311 3층 (창신동)<br>3F 311, Jong-ro, Jongno-gu, Seoul</p>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <!-- <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
+                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <a class="page-scroll scroll-top" href="#banner"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    </div><!-- row -->
+  </div><!-- container -->
+</footer>
+
+
+
+<!-- jQuery -->
+<script src="assets/js/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Easing -->
+<script src="assets/js/jquery.easing.min.js"></script>
+
+<!-- Isotop -->
+<script src="assets/js/isotope.pkgd.min.js"></script>
+
+<!-- Lightcase -->
+<script src="assets/js/lightcase.js"></script>
+
+<!-- Swiper -->
+<script src="assets/js/swiper.jquery.min.js"></script>
+
+<!-- WOW js -->
+<script src="assets/js/wow.min.js"></script>
+
+<!-- Google Map -->
+<!--<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyAQlXnmyNPAeN3c3HNyWoUMqDk6bDF31Cg"></script>
+<script src="assets/js/map-function.js"></script>-->
+
+<!-- Custom -->
+<script src="assets/js/custom.js"></script>
+
+
+</body>
 </html>
